@@ -9,4 +9,45 @@ Ein simples "Schiffe versenken" Spiel, welches zwei Spieler gegeneinander Spiele
 
 ## Klassendiagramm
 
+```mermaid
+classDiagram
+
+    ShipPartState <|-- ShipPartStateNotHit
+    ShipPartState <|-- ShipPartStateHit
+
+    class Ship{
+        - parts: List ~ShipPart~
+    } 
+
+    class ShipPart{
+        - position: Coordinate
+        - state: ShipPartState
+
+    }
+
+    class Player{
+        - name: String
+        - ships: List ~Ship~
+    }
+
+    class Game{
+        - player1: Player
+        - player2: Player
+        - difficulty: int
+        - winner: Player
+    }
+
+    class ShipPartState{
+
+    }
+
+    class ShipPartStateNotHit{
+        hit()
+    }
+
+    class ShipPartStateHit{
+
+    }
+```
+
 ## Wireframes
