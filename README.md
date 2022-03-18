@@ -16,10 +16,10 @@ classDiagram
 
     ShipPartState <|-- ShipPartStateNotHit
     ShipPartState <|-- ShipPartStateHit
-    Ship -- ShipPart
-    ShipPart -- ShipPartState
-    Player -- Ship
-    Game -- Player
+    Ship -- ShipPart: has parts
+    ShipPart -- ShipPartState: is in state
+    Player -- Ship: has as ship
+    Game -- Player: has as players
 
     class Ship{
         
