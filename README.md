@@ -14,20 +14,22 @@ classDiagram
 
     ShipPartState <|-- ShipPartStateNotHit
     ShipPartState <|-- ShipPartStateHit
+    Ship -- ShipPart
+    ShipPart -- ShipPartState
+    Player -- Ship
+    Game -- Player
 
     class Ship{
-        - parts: List ~ShipPart~
+        
     } 
 
     class ShipPart{
         - position: Coordinate
-        - state: ShipPartState
 
     }
 
     class Player{
         - name: String
-        - ships: List ~Ship~
     }
 
     class Game{
