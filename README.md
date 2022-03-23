@@ -57,7 +57,6 @@ classDiagram
 ## Technologien
 - Java
 - JAX-RS
-- Tailwinds CSS
 - HTML
 - JavaScript
 - JS Fetch
