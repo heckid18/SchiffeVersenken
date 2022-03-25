@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ShipPart {
 
-    int coordinateX;
-    int coordinateY;
+    Coordinates coordinates;
     ShipPartState state;
 }
