@@ -24,6 +24,10 @@ public class Game {
         this.id = id;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public boolean shoot(Player victim, Coordinates coordinates) {
         for (Ship s : victim.getShips()) {
             Optional<ShipPart> ship_part = s.getShip_parts().stream().filter(sp -> sp.getCoordinates().equals(coordinates)).findFirst();
