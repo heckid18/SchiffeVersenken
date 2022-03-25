@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Player {
-    private String name;
+public class ShipPart {
+
+    int coordinateX;
+    int coordinateY;
+    ShipPartState state;
 }
