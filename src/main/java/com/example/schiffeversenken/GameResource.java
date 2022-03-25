@@ -7,5 +7,5 @@ import jakarta.ws.rs.Produces;
 
 @Path("/game")
 public class GameResource {
-
+    //TODO: Implement methods
 }
