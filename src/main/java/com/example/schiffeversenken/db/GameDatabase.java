@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class GameDatabase {
 
-    private GameDatabase instance;
+    private static GameDatabase instance;
 
     private List<Game> games = new ArrayList<>();
 
@@ -17,7 +17,7 @@ public class GameDatabase {
 
     }
 
-    public synchronized GameDatabase getInstance() {
+    public static synchronized GameDatabase getInstance() {
         if(instance == null){
             instance = new GameDatabase();
         }
@@ -48,5 +48,9 @@ public class GameDatabase {
         else {
             throw new NoSuchElementException();
         }
+    }
+
+    public List<Game> getAllGames() {
+        return games;
     }
 }

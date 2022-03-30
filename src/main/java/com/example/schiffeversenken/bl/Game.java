@@ -8,25 +8,15 @@ import lombok.NoArgsConstructor;
 
 import java.util.Optional;
 
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Game {
     private int id;
     private Player player1;
     private Player player2;
     private int difficulty;
     private Player winner;
-
-    public Game(int id, Player player1, Player player2, int difficulty, Player winner) {
-        this.player1 = player1;
-        this.player2 = player2;
-        this.difficulty = difficulty;
-        this.winner = winner;
-        this.id = id;
-    }
-
-    public int getId() {
-        return id;
-    }
 
     public boolean shoot(Player victim, Coordinates coordinates) {
         for (Ship s : victim.getShips()) {

@@ -11,6 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Player {
-    private String name;
     List<Ship> ships = new ArrayList<>();
 }
