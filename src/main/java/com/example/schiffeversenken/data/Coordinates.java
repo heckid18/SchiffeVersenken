@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Coordinates {
-    int X;
-    int Y;
+    private int X;
+    private int Y;
 }

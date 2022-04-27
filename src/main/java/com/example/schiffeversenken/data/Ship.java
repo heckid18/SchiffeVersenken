@@ -12,6 +12,6 @@ import java.util.List;
 @NoArgsConstructor
 public class Ship {
 
-    List<ShipPart> ship_parts = new ArrayList<ShipPart>();
+    private List<ShipPart> ship_parts = new ArrayList<ShipPart>();
 
 }
