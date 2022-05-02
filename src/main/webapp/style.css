@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  cursor: pointer;
+  width: 1200px;
+  height: 100px;
+}
+
+body {
+    margin: auto;
+    max-width: max-content;
+    /*background-image: url('../resources/Images/bg_battleship.jpg');*/
+}
+
+#gamecode{
+  cursor: pointer;
+  width: 1200px;
+  height: 100px;
+}
