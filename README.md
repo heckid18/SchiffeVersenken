@@ -11,12 +11,12 @@ Es wird für ein Feld 3 States geben:
 - Water:
 Wenn sich auf dem Feld kein Schiff befindet und es
 auch nicht neben einem Schiff liegt.
-- Ship:
+- ShipTest:
 Wenn sich auf diesem Feld ein Schiff befindet
 - Blocked: Wenn sich auf einem anliegenden Feld ein Schiff befindet und somit auf dem Feld kein zweites Schiff plaziert 
 werden darf.
 
-Wenn ein Feld im state Ship befindet und es angeklickt wird, wird ein X angezeigt
+Wenn ein Feld im state ShipTest befindet und es angeklickt wird, wird ein X angezeigt
 Sollte das Feld den state Water oder Blocked haben wird ein O angezeigt.
 
 
@@ -30,12 +30,12 @@ classDiagram
 
     ShipPartState <|-- ShipPartStateNotHit
     ShipPartState <|-- ShipPartStateHit
-    Ship -- ShipPart: has parts
+    ShipTest -- ShipPart: has parts
     ShipPart -- ShipPartState: is in state
-    Player -- Ship: has as ship
+    Player -- ShipTest: has as ship
     Game -- Player: has as players
 
-    class Ship{
+    class ShipTest{
         
     } 
 

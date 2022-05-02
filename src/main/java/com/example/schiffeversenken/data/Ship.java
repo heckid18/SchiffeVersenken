@@ -12,6 +12,11 @@ import java.util.List;
 @NoArgsConstructor
 public class Ship {
 
-    private List<ShipPart> ship_parts = new ArrayList<ShipPart>();
+    private List<ShipPart> ship_parts = new ArrayList<>();
+
+    public Ship addPart(ShipPart part) {
+        ship_parts.add(part);
+        return this;
+    }
 
 }
