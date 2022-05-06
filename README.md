@@ -22,6 +22,7 @@ Sollte das Feld den state Water oder Blocked haben wird ein O angezeigt.
 
 - Observer Pattern
 - (Decorator Pattern)
+- Builder Pattern
 
 ## Klassendiagramm
 

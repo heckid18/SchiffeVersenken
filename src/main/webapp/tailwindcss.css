@@ -503,6 +503,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -517,6 +522,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(12 74 110 / var(--tw-text-opacity));
 }
 
+.text-teal-600 {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
 button {
   cursor: pointer;
   width: 1200px;
@@ -529,6 +539,12 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   /*background-image: url('../resources/Images/bg_battleship.jpg');*/
+}
+
+#gamecode{
+  cursor: pointer;
+  width: 1200px;
+  height: 100px;
 }
 
 .hover\:rounded-xl:hover {
