@@ -19,10 +19,9 @@ werden darf.
 Wenn ein Feld im state ShipTest befindet und es angeklickt wird, wird ein X angezeigt
 Sollte das Feld den state Water oder Blocked haben wird ein O angezeigt.
 
-
-- Observer Pattern
-- (Decorator Pattern)
-- Builder Pattern
+###Observer Pattern
+###(Decorator Pattern)
+###Builder Pattern
 
 ## Klassendiagramm
 

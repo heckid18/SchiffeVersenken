@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+
+    <script type="text/javascript">
+        var wsocket;
+        function connect(){
+            wsocket = new WebSocket("http://localhost:8080/SchiffeVersenken-1.0-SNAPSHOT/game1");
+            wsocket.onmessage = onMessage;
+        }
+        function onMessage(evt){
+            var arraypv = evt.data.split("/");
+            document.getElementById("coordinate").innerHTML = arraypv[0];
+            document.getElementById("hit").innerHTML = arraypv[1];
+        }
+        window.addEventListener("load",connect,false);
+    </script>
+
 </head>
 <body>
+
+    <h1>Websocket Beispiel</h1>
+    <table>
+        <tr>
+            <td>Coordinate</td>
+            <td>Hit</td>
+        </tr>
+        <tr>
+            <td id="coordinate"></td>
+            <td id="hit"></td>
+        </tr>
+    </table>
     
 </body>
 </html>

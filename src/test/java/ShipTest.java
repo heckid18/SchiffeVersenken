@@ -11,8 +11,7 @@ public class ShipTest {
     public void addShipPart(){
         Ship ship = new Ship();
         ship.addPart(new ShipPart(new Coordinates(0, 0), new ShipPartStateNotHit()))
-                .addPart(new ShipPart(new Coordinates(1, 0), new ShipPartStateNotHit()))
-                .addPart(new ShipPart(new Coordinates(2, 0), new ShipPartStateNotHit()));
+                .addPart(new ShipPart(new Coordinates(1, 0), new ShipPartStateNotHit()));
 
         assertTrue(ship.getShip_parts() != null);
     }
