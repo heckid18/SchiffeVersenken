@@ -1,5 +1,6 @@
 let grid;
 let ships;
+let placed_ships;
 
 class GridSquare{
     constructor(x_coordinate, y_coordinate, hasShip, isHit){
@@ -36,3 +37,10 @@ function initShipList(){
     ships[4] = new Ship(null, null, 5, null);
 }
 
+function placeShip(x_coordinate, y_coordinate, ship){
+    if(x_coordinate < 0 || x_coordinate > 10 || y_coordinate < 0 || y_coordinate > 10){
+        throw new Error("Ship coordinates out of grid!");
+    }
+    //TODO: Check if coordinates are occupied by other ship
+    //TODO: Place ship in grid
+}
