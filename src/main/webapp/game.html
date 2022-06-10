@@ -18,10 +18,14 @@
             document.getElementById("hit").innerHTML = arraypv[1];
         }
         window.addEventListener("load",connect,false);
+
+        function printGameCode(){
+            document.getElementById("gamecode").innerHTML = localStorage.getItem('gameId');
+        }
     </script>
 
 </head>
-<body>
+<body onload="printGameCode()">
 
     <h1>Websocket Beispiel</h1>
     <table>
@@ -34,6 +38,10 @@
             <td id="hit"></td>
         </tr>
     </table>
+
+    <div id="gamecode">
+
+    </div>
     
 </body>
 </html>
