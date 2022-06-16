@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
 
+    <script src="schiffeversenken.js"></script>
+    <link href="tailwindcss.css" type="text/css" rel="stylesheet">
+
     <script type="text/javascript">
+        /*
         var wsocket;
         function connect(){
             wsocket = new WebSocket("http://localhost:8080/SchiffeVersenken-1.0-SNAPSHOT/game1");
@@ -22,26 +26,25 @@
         function printGameCode(){
             document.getElementById("gamecode").innerHTML = localStorage.getItem('gameId');
         }
+        */
+
+        /*
+        window.onload = () => {
+            for(let i = 0; i < 100; i++){
+                document.getElementById("grid-container").innerHTML += '<div class="grid-container-child hover:bg-sky-800" id="' + i.toString + '">Grid</div>';
+            }
+        };
+        */
     </script>
 
 </head>
-<body onload="printGameCode()">
-
-    <h1>Websocket Beispiel</h1>
-    <table>
-        <tr>
-            <td>Coordinate</td>
-            <td>Hit</td>
-        </tr>
-        <tr>
-            <td id="coordinate"></td>
-            <td id="hit"></td>
-        </tr>
-    </table>
-
-    <div id="gamecode">
-
+<body>
+    <div class="grid-container">
+        <?php
+            for ($i=0; $i < 100; $i++) { 
+                echo '<div class="grid-child bg-white hover:bg-red-800">Grid</div>';
+            }
+        ?>
     </div>
-    
 </body>
 </html>

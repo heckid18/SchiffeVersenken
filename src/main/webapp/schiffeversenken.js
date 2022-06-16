@@ -44,3 +44,7 @@ function placeShip(x_coordinate, y_coordinate, ship){
     //TODO: Check if coordinates are occupied by other ship
     //TODO: Place ship in grid
 }
+
+function shoot(gridnum){
+    
+}

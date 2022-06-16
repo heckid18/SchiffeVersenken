@@ -19,3 +19,20 @@ body {
   width: 1200px;
   height: 100px;
 }
+
+
+.grid-container{
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-auto-rows: auto;
+}
+  /*
+.grid-container-child{
+  background-color: red;
+}
+*/
+
+.grid-child{
+  border: 1px solid black;
+}
