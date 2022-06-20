@@ -1,0 +1,40 @@
+@startuml
+class Ship{
+    - shipParts: ArrayList<ShipPart>
+    + addShipPart(): this
+}
+
+class ShipPart{
+    - coordinates: Coordinates
+    - shipPartState: ShipPartState
+}
+
+class Coordinates{
+    - x: Int
+    - y: Int
+}
+
+class Player{
+    - id: int
+    - ships: ArrayList<Ship>
+}
+
+interface ShipPartState{
+    + hit(): boolean
+}
+
+class ShipPartStateHit{
+    + hit(): boolean
+}
+
+class ShippartStateNotHit{
+    + hit(): boolean
+}
+
+ShipPart *-- Ship
+Coordinates -- ShipPart
+ShipPartState <|-- ShipPartStateHit
+ShipPartState <|-- ShippartStateNotHit
+Ship -- Player
+ShipPart -- ShipPartState
+@enduml

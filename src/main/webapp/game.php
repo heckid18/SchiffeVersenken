@@ -39,12 +39,16 @@
 
 </head>
 <body>
-    <div class="grid-container">
+    <table class="grid-container">
         <?php
-            for ($i=0; $i < 100; $i++) { 
-                echo '<div class="grid-child bg-white hover:bg-sky-800">Grid</div>';
+            for ($i=0; $i < 10; $i++) { 
+                echo '<tr>';
+                for ($j=0; $j < 10; $j++) { 
+                    echo '<td class="grid-child hover:bg-sky-800" id="' . $i . $j . '">Grid</td>';
+                }
+                echo '</tr>';
             }
         ?>
-    </div>
+    </table>
 </body>
 </html>
