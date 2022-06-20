@@ -42,7 +42,7 @@
     <div class="grid-container">
         <?php
             for ($i=0; $i < 100; $i++) { 
-                echo '<div class="grid-child bg-white hover:bg-red-800">Grid</div>';
+                echo '<div class="grid-child bg-white hover:bg-sky-800">Grid</div>';
             }
         ?>
     </div>
