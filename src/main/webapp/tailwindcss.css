@@ -656,13 +656,13 @@ body {
   height: 100px;
 }
 
+/*
 .grid-container{
   display: grid;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   row-gap: 10px;
-  grid-auto-rows: auto;
 }
+*/
 
 /*
 .grid-container-child{
@@ -672,6 +672,27 @@ body {
 
 .grid-child{
   border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.shippart{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+#shiptoplace{
+  top: 20px;
+}
+
+#ships{
+  top: 20px;
+}
+
+.ship{
+  top: 20px;
 }
 
 .hover\:rounded-xl:hover {
