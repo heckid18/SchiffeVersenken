@@ -35,4 +35,25 @@ body {
 
 .grid-child{
   border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.shippart{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+#shiptoplace{
+  top: 20px;
+}
+
+#ships{
+  top: 20px;
+}
+
+.ship{
+  top: 20px;
 }
