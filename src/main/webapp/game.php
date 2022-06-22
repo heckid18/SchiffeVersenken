@@ -35,6 +35,16 @@
             }
         };
         */
+
+        function shoot(id){
+            alert("Ship state changed");
+            document.getElementById(id).style.backgroundColor = "red";
+
+        }
+
+        function getGridState(){
+            alert("State: Water");
+        }
     </script>
 
 </head>
@@ -44,7 +54,7 @@
             for ($i=0; $i < 10; $i++) { 
                 echo '<tr>';
                 for ($j=0; $j < 10; $j++) { 
-                    echo '<td class="grid-child hover:bg-sky-800" id="' . $i . $j . '">&nbsp;</td>';
+                    echo '<td class="grid-child hover:bg-sky-800" id="' . $i . $j . '" onclick="getGridState()">&nbsp;</td>';
                 }
                 echo '</tr>';
             }
@@ -57,7 +67,7 @@
                     for($h=0; $h < $i; $h++) {
                         echo '<tr class="ship">';
                         for($j=1; $j <= 6 - $i; $j++){
-                           echo '<td class="shippart">&nbsp</td>';
+                           echo '<td class="shippart" onclick="shoot('. $j . $i . $h .')" id="' . $j . $i . $h .'">&nbsp</td>';
                         }
                         echo '</tr>';
                     }
