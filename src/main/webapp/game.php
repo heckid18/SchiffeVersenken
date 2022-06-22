@@ -44,11 +44,26 @@
             for ($i=0; $i < 10; $i++) { 
                 echo '<tr>';
                 for ($j=0; $j < 10; $j++) { 
-                    echo '<td class="grid-child hover:bg-sky-800" id="' . $i . $j . '">Grid</td>';
+                    echo '<td class="grid-child hover:bg-sky-800" id="' . $i . $j . '">&nbsp;</td>';
                 }
                 echo '</tr>';
             }
         ?>
     </table>
+    <div id="shiptoplace">
+        <table id="ships">
+            <?php
+                for($i=1; $i <= 4; $i++) {
+                    for($h=0; $h < $i; $h++) {
+                        echo '<tr class="ship">';
+                        for($j=1; $j <= 6 - $i; $j++){
+                           echo '<td class="shippart">&nbsp</td>';
+                        }
+                        echo '</tr>';
+                    }
+                }
+            ?>
+        </table>
+    </div>
 </body>
 </html>
